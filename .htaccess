@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+	RewriteCond %{HTTP_HOST} ^laravel$ [NC,OR]
+	RewriteCond %{HTTP_HOST} ^www.laravel$ 
+	RewriteCond %{REQUEST_URI} !public/
+	RewriteRule (.*) /public/$1 [L]
+</IfModule>
+
+#DirectoryIndex /public/index.php
+#RewriteEngine On
+#RewriteCond %{REQUEST_URI} ^/index.php
+#RewriteRule ^index.php(.*)$ /public/index.php [L]

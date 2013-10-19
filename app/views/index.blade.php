@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>QoobRoom</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=0.75, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
 	    <link rel="icon" type="image/png" href="favicon.png" />
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="stylesheet" href="<?=URL::to('css/normalize.css');?>">

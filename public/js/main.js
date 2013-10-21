@@ -219,8 +219,14 @@ $('.contacts .green-button, .call-us .green-button').click( function(e){
 $('.dl-3D .black-button').click( function(e){
 	togglePopup(dl3D);
 });
-/*------ free calculation ------------------*/
 
+$('.second-video .ipad-youtube img').click( function(){
+	$('.second-video .ipad-youtube').html('<iframe width="650" height="371" src="//www.youtube.com/embed/p7rynEEcKkQ?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>');
+});
+$('.video-in-pict .ipad-youtube img').click( function(){
+	$('.video-in-pict .ipad-youtube').html('<iframe width="588" height="429" src="//www.youtube.com/embed/cTqgtWVZfD0?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>');
+});
+/*------ free calculation ------------------*/
 $(".dl-romb.free-calc").click(function() {
     $('html, body').animate({
         scrollTop: $(".calculation-form-section").offset().top

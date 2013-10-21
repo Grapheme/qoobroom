@@ -52,11 +52,11 @@
         <section class="rombic-figures">
         	<div class="mini-wrapper">
         		<div class="dl-romb model-dl left__fade">
-        			<div class="romb-cont">
+        			<a href="#" class="romb-cont">
         				<img src="<?=URL::to('img/rombic/grass_block.png');?>" alt="">
         				<span>3-D модели растений</span>
-        				<a href="#">Скачать</a>
-        			</div>
+        				<span class="green-span" href="#">Скачать</span>
+        			</a>
         		</div>        		
         		<div class="rombic-slideshow">
         			<div class="rombic-slideshow-cont">
@@ -93,18 +93,18 @@
 					<img src="<?=URL::to('img/rombic/int-right.png');?>" alt="">
 				</div>
         		<div class="dl-romb proj-present right__fade">
-        			<div class="romb-cont">
-        				<img src="<?=URL::to('img/rombic/green_book.png');?>" alt="">
-        				<span>Презентация проекта</span>
-        				<a href="#">Скачать</a>
-        			</div>
+        			<a class="romb-cont">
+        					<img src="<?=URL::to('img/rombic/green_book.png');?>" alt="">
+        					<span>Презентация проекта</span>
+        					<span class="green-span">Скачать</span>        				
+        			</a>
         		</div>
         	</div>	
         </section> 
         <section class="video-in-pict">
         	<div class="mini-wrapper">
 	        	<div class="ipad-youtube">
-	        		<iframe width="588" height="429" src="//www.youtube.com/embed/cTqgtWVZfD0" frameborder="0" allowfullscreen></iframe>
+	        		<img src="<?=URL::to('img/greening.jpg');?>" alt="">	        		
 	        	</div>
         	</div>
         </section>
@@ -367,7 +367,7 @@
 		    </section>
 		    <section class="second-video">
         	    <div class="ipad-youtube">
-	        		<iframe width="650" height="371" src="//www.youtube.com/embed/p7rynEEcKkQ" frameborder="0" allowfullscreen></iframe>	
+        	    	<img src="<?=URL::to('img/repairschool.jpg');?>" alt="">	        			
 	        	</div>        	
        		</section>       		
 	    </article>

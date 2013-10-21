@@ -177,8 +177,8 @@ body.modal-open { width: 100%; height: 100%; overflow: hidden; }
 	-webkit-backface-visibility: hidden;
 	-webkit-font-smoothing: antialiased;
 }
-.model-dl .romb-cont a,
-.proj-present .romb-cont a { display: block; margin: .35em 0 0; font: .875em 'intro-book', sans-serif; color: #8aae3c; text-transform: uppercase; 
+.model-dl .romb-cont .green-span,
+.proj-present .romb-cont .green-span { display: block; margin: .35em 0 0; font: .875em 'intro-book', sans-serif; color: #8aae3c; text-transform: uppercase; 
 	-webkit-transform-style: preserve-3d;
 	-webkit-backface-visibility: hidden;
 	-webkit-font-smoothing: antialiased;
@@ -236,6 +236,8 @@ body.modal-open { width: 100%; height: 100%; overflow: hidden; }
 .dl-booklet { margin: 0 0 3em; }
 .video-in-pict .ipad-youtube { position: relative; width: 770px; height: 597px; margin: 0 auto; background: url(../img/ipad.png) center center no-repeat; }
 .second-video .ipad-youtube { position: relative; width: 940px; height: 491px; margin: 0 auto; background: url(../img/ipad2.png) center center no-repeat; }
+.second-video img { position: relative; top: 39px; left: 145px; width: 588; height: 429; cursor: pointer; }
+.video-in-pict img { position: relative; top: 76px; left: 89px; width: 650; height: 371; cursor: pointer; }
 .second-video iframe { position: relative; top: 39px; left: 145px; }
 .video-in-pict iframe { position: relative; top: 76px; left: 89px; }
 .where-need { margin: 0 0 2em; padding: 4em 0 2em; background: #F7F7F7; }

@@ -293,7 +293,20 @@ html { font: 100%/1.3125em 'intro-book', sans-serif; }
 
 .projects-item { text-align: center; }
 .projects-item .projects-item-container { display: inline-block; }
-.projects-item .projects-item-container img { display: block; width: 200px; height: 256px; margin: 0 0 2em; }
+.projects-item .projects-item-container img { display: block; width: 200px; height: 256px; margin: 0 0 2em; 
+	transition: all .8s ease;
+	-webkit-transition: all .8s ease;
+	-moz-transition: all .8s ease;
+	-o-transition: all .8s ease;
+	-ms-transition: all .8s ease;
+}
+.projects-item-container img:hover { 
+	-webkit-transform: scale(1.05);
+       -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+         -o-transform: scale(1.05);
+            transform: scale(1.05);
+}
 .project-desc .bold { font-family: 'intro-bold'; }
 .project-desc .to_uppercase { display: block; margin: 1em 0 0; text-transform: uppercase; }
 

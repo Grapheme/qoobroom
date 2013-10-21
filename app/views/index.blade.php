@@ -299,13 +299,13 @@
 		       		<li class="places-item left_func">
 		       			<div class="places-item-container">
 			       			<img src="<?=URL::to('img/places/8.jpg');?>" alt="">
-			       			<span class="a-little-quote right_func">Частные дома и квартиры</span>
+			       			<span class="a-little-quote right_func">Салоны красоты, SPA</span>
 		       			</div>
 		       		</li>
 		       		<li class="places-item left_func">
 		       			<div class="places-item-container">
 			       			<img src="<?=URL::to('img/places/9.jpg');?>" alt="">
-			       			<span class="a-little-quote right_func">Салоны красоты, SPA</span>
+			       			<span class="a-little-quote right_func">Частные дома и квартиры</span>
 		       			</div>
 		       		</li>
 		       	</ul>
@@ -402,7 +402,7 @@
 			    <ul class="projects-list clearfix">
 			    	<li class="projects-item left_func">
 			    		<div class="projects-item-container">
-				   			<img src="<?=URL::to('img/realized_projects/1.jpg');?>" alt="">
+				   			<a target="_blank" href="<?=URL::to('download/dlya_djentelmenov.pdf');?>"><img src="<?=URL::to('img/realized_projects/1.jpg');?>" alt=""></a>
 				   			<div class="project-desc right_func">
 				   				<span class="bold">Salon Interior</span>. No 4. апрель 2012
 				   				<span class="to_uppercase">Для джентельменов</span>
@@ -411,7 +411,7 @@
 			    	</li>
 			    	<li class="projects-item left_func">
 			    		<div class="projects-item-container">
-				   			<img src="<?=URL::to('img/realized_projects/2.jpg');?>" alt="">
+				   			<a target="_blank" href="<?=URL::to('download/takoe_vkusnoe_nebo.pdf');?>"><img src="<?=URL::to('img/realized_projects/2.jpg');?>" alt=""></a>
 				   			<div class="project-desc right_func">
 				   				<span class="bold">HiHome</span>. No 8. август 2012
 				   				<span class="to_uppercase">Такое вкусное небо</span>
@@ -420,7 +420,7 @@
 			    	</li>
 			    	<li class="projects-item left_func">
 			    		<div class="projects-item-container">
-				   			<img src="<?=URL::to('img/realized_projects/3.jpg');?>" alt="">
+				   			<a target="_blank" href="<?=URL::to('download/vse_ottenki_neba.pdf');?>"><img src="<?=URL::to('img/realized_projects/3.jpg');?>" alt=""></a>
 				   			<div class="project-desc right_func">
 				   				<span class="bold">Salon Interior</span>. No 10. октябрь 2012
 				   				<span class="to_uppercase">Все оттенки неба</span>

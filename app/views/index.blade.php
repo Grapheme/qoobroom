@@ -186,7 +186,7 @@
 	    				Скачайте наш презентационный буклет с примерами реализации<br>с разными видами растений с полезной информацией.<br>
 	    				Показывайте вашим клиентам, держите под рукой 
 	    			</span>
-	    			<a href="<?=URL::to('download/QRGreenWall.pdf');?>" class="site-button pretty-button black-button right_func">Скачать презентацию</a>
+	    			<a href="<?=URL::to('download/QRGreenWall.pdf');?>" target="_blank" class="site-button pretty-button black-button right_func">Скачать презентацию</a>
 	    		</div>
 	    	</div>
 	    </section>

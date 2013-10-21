@@ -19,6 +19,7 @@ tools.mobile = {
 tools.mobile.init();
 
 var popupStatus = false,
+	body = $('body'),
 	overlay = $('.overlay'),
 	formClose = $('.form-close'),
 	orderACall = $('.order-a-call'),
@@ -64,9 +65,11 @@ var popupStatus = false,
 function togglePopup(elem) {
 	if ( popupStatus === false ) {
 		overlay.fadeIn( 200, function(){ popupStatus = true; if (elem) elem.fadeIn( 200 ).css({ 'top': '50%' }); });
+		body.addClass('modal-open');
 	}
 	else {
 		overlay.children('div').css({ 'top': '130%' }).parent().delay( 350 ).fadeOut( 200, function(){ popupStatus = false; overlay.children('div').removeAttr('style').hide(); });
+		body.removeClass('modal-open');
 	}	
 }
 /*-------Set an animation for romb elemnts onLoad event-------*/

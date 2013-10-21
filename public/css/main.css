@@ -104,6 +104,7 @@ textarea {
 .fotorama__arr--prev .fotorama__arr__arr:hover { background-position: 0 0; }
 
 html { font: 100%/1.3125em 'intro-book', sans-serif; }
+body.modal-open { width: 100%; height: 100%; overflow: hidden; }
 .wrapper, .mini-wrapper { width: 980px; margin: 0 auto; overflow: hidden; }
 /* Header styles */
 .main-header { height: 71px; background: #333; }
@@ -213,6 +214,9 @@ html { font: 100%/1.3125em 'intro-book', sans-serif; }
         -ms-transform: rotate(-45deg); 
          -o-transform: rotate(-45deg);
             transform: rotate(-45deg);
+-webkit-transform-style: preserve-3d;
+-webkit-backface-visibility: hidden;
+-webkit-font-smoothing: antialiased;
 }
 
 .dl-romb.model-dl { top: 130px; left: 11px; }
@@ -450,11 +454,11 @@ footer .social-links li { margin: 18px 6px 17px; }
 	text-transform: uppercase;
 	outline: none;
 	position: relative;
-	transition: all .3s ease;
-	-webkit-transition: all .3s ease;
-	-moz-transition: all .3s ease;
-	-o-transition: all .3s ease;
-	-ms-transition: all .3s ease;
+	transition: all .3s ease !important;
+	-webkit-transition: all .3s ease !important;
+	-moz-transition: all .3s ease !important;
+	-o-transition: all .3s ease !important;
+	-ms-transition: all .3s ease !important;
 	text-align: center;
     text-decoration: none;
 }
@@ -462,11 +466,11 @@ footer .social-links li { margin: 18px 6px 17px; }
 	content: '';
 	position: absolute;
 	z-index: -1;
-	transition: all .3s ease;
-	-webkit-transition: all .3s ease;
-	-moz-transition: all .3s ease;
-	-o-transition: all .3s ease;
-	-ms-transition: all .3s ease;
+	transition: all .3s ease, !important;
+	-webkit-transition: all .3s ease, !important;
+	-moz-transition: all .3s ease, !important;
+	-o-transition: all .3s ease, !important;
+	-ms-transition: all .3s ease, !important;
 }
 .site-button:before {
 	position: relative;
@@ -475,11 +479,11 @@ footer .social-links li { margin: 18px 6px 17px; }
 .pretty-button {
 	width: 230px;    	
     color: #FFF;
-    transition: none 0s ease 0s;    
-	-webkit-transition: none 0s ease 0s;
-	-moz-transition: none 0s ease 0s;
-	-o-transition: none 0s ease 0s;
-	-ms-transition: none 0s ease 0s;	
+    transition: none 0s ease 0s !important;    
+	-webkit-transition: none 0s ease 0s !important;
+	-moz-transition: none 0s ease 0s !important;
+	-o-transition: none 0s ease 0s !important;
+	-ms-transition: none 0s ease 0s !important;	
     -moz-border-radius: 3px;
 	-webkit-border-radius: 3px; 
 	-khtml-border-radius: 3px; 

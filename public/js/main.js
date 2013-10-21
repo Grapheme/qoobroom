@@ -227,6 +227,8 @@ $('.dl-3D-download .black-button').click( function(){
 		$('.email-3d-div').removeClass('error');
 	}
 	if(error == 0) {
+		$('.download-send').html('Идет отправка...');
+		$('.download-send').attr('disabled', 'disabled');
 		$.post( "download3d", { 	name: $('.name-3d-input').val(), 
 								email: $('.email-3d-input').val() })
   		.done(function(data) {
@@ -244,7 +246,6 @@ $('.dl-3D-download .black-button').click( function(){
 });
 
 $('.calculation-form .black-button').click( function(){
-	$('.NFI-button').css('background', '#E9A78A');
 	var namel = $('.name-calc-input').val().length;
 	var emaill = $('.email-calc-input').val().length;
 	var error = 0;
@@ -261,18 +262,27 @@ $('.calculation-form .black-button').click( function(){
 		$('.email-calc-div').removeClass('error');
 	}
 	if($("#iDesigner").prop("checked")) {
-		if($('.designer-docs').val()=='' ) {
-			
-			error++;
+		if( $('.NFI-filename').val().indexOf(".") > 0 ) {
+			$('.NFI-button').css('background', '#ffffff');
 		} else {
-			error = error-1;
+			error++;
+			$('.NFI-button').css('background', '#E9A78A');
 		}
 	}
+	
+	if($("#iDesigner").prop("checked")) {
+		var $type = 1;
+	} else {
+		var $type = 0;
+	}
+	
 	if(error == 0) {
-		$.post( "calc", { 		type: $('.old_radio').val(),
+		$('.calc-send').html('Идет отправка...');
+		$('.calc-send').attr('disabled', 'disabled');
+		$.post( "calc", { 		type: $type,
 								name: $('.name-calc-input').val(), 
 								email: $('.email-calc-input').val(),
-								file: $('.designer-docs').val()})
+								file: $('.NFI-filename').val()})
   		.done(function(data) {
 	    	if(data == 'success') {
 				$('.calculation-form').html('<div class="calculation-success">Ваша форма заявки на расчет зеленой стены успешно отправлена.</div>');
@@ -299,6 +309,8 @@ $('.recall-send').click( function(){
 	}
 	if(error == 0)
 	{
+		$('.recall-send').html('Идет отправка...');
+		$('.recall-send').attr('disabled', 'disabled');
 		$.post( "recall", { 	name: $('.name-input').val(),
 								phone: $('.phone-input').val(), 
 								time: $('.time-input').val() })

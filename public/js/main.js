@@ -67,10 +67,9 @@ function togglePopup(elem) {
 		overlay.fadeIn( 200, function(){ popupStatus = true; if (elem) elem.fadeIn( 200 ).css({ 'top': '50%' }); });
 		body.addClass('modal-open');
 	}
-	else {
-		overlay.children('div').css({ 'top': '130%' }).parent().delay( 350 ).fadeOut( 200, function(){ popupStatus = false; overlay.children('div').removeAttr('style').hide(); });
-		body.removeClass('modal-open');
-	}	
+	else {		
+		overlay.children('div').css({ 'top': '130%' }).parent().delay( 350 ).fadeOut( 200, function(){ popupStatus = false; overlay.children('div').removeAttr('style').hide(); body.removeClass('modal-open'); });
+	}		
 }
 /*-------Set an animation for romb elemnts onLoad event-------*/
 function animateOnLoad() {		
@@ -213,7 +212,7 @@ overlay.add( formClose ).click( function(){
 $('.contacts .green-button, .call-us .green-button').click( function(e){
 	togglePopup(orderACall);
 });
-$('.dl-3D .black-button').click( function(e){
+$('.dl-3D .black-button, .dl-romb.model-dl').click( function(e){
 	togglePopup(dl3D);
 });
 
@@ -227,16 +226,6 @@ $('.video-in-pict .ipad-youtube img').click( function(){
 $(".dl-romb.free-calc").click(function() {
     $('html, body').animate({
         scrollTop: $(".calculation-form-section").offset().top
-    }, 2000);
-});
-$('.dl-romb.model-dl').click(function() {
-    $('html, body').animate({
-        scrollTop: $("section.dl-3D").offset().top
-    }, 2000);
-});
-$('.dl-romb.proj-present').click(function() {
-	$('html, body').animate({
-        scrollTop: $("section.dl-booklet").offset().top
     }, 2000);
 });
 /*-------form dynamics -----------------------*/

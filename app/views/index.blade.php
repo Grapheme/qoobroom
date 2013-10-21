@@ -93,7 +93,7 @@
 					<img src="<?=URL::to('img/rombic/int-right.png');?>" alt="">
 				</div>
         		<div class="dl-romb proj-present right__fade">
-        			<a class="romb-cont">
+        			<a href="<?=URL::to('download/QRGreenWall.pdf');?>" target="_blank" class="romb-cont">
         					<img src="<?=URL::to('img/rombic/green_book.png');?>" alt="">
         					<span>Презентация проекта</span>
         					<span class="green-span">Скачать</span>        				

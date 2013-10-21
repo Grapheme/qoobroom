@@ -183,7 +183,7 @@ body.modal-open { width: 100%; height: 100%; overflow: hidden; }
 	-webkit-backface-visibility: hidden;
 	-webkit-font-smoothing: antialiased;
 }
-.romb-cont { position: absolute; text-align: center;
+.romb-cont { position: absolute; text-align: center; text-decoration: none;
 	-webkit-transform: rotate(-45deg);
        -moz-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg); 

@@ -114,9 +114,6 @@ function animateOnScroll(scrollParent) {
 			timer += 300;
 		});
 	}
-	else {
-		alert('false');
-	}
 }
 function checkRadios() {
 	designerDocs = $('.NFI-wrapper');	

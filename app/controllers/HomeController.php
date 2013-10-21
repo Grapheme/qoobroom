@@ -54,11 +54,11 @@ class HomeController extends BaseController {
 		if($validator->fails()):
 			return "false";
 		else:
-			//DB::insert('insert into users (name, email) values (?, ?)',array($name, $email));
+			DB::insert('insert into users (name, email) values (?, ?)',array($name, $email));
 			$data = array('type' => $type,'name' => $name,'email' => $email);
 			Mail::send('emails.calc', $data, function($message){
 				$message->from('noreply@QoobRoom.com','QoobRoom');
-				$message->to('thedamaxstudio@gmail.com')->subject('QoobRoom - Заказ расчета стоимости');
+				$message->to('greenwall@qoobroom.ru')->subject('QoobRoom - Заказ расчета стоимости');
 				//$message->attach($file);
 			});
 			return "success";
@@ -78,7 +78,7 @@ class HomeController extends BaseController {
 		if($validator->fails()):
 			return "false";
 		else:
-			//DB::insert('insert into users (name, email) values (?, ?)',array($name,$email));
+			DB::insert('insert into users (name, email) values (?, ?)',array($name,$email));
 			$data = array('link'=>$link,'name'=>$name);
 			Mail::send('emails.download3d',$data,function($message) use ($email) {
 				$message->from('noreply@QoobRoom.com','QoobRoom');

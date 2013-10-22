@@ -77,7 +77,7 @@ function animateOnLoad() {
 	var $noRotate = $('.rombic-figures .right__fade, .rombic-figures .left__fade, .interier-romb.right-int, .interier-romb.left-int, .contacts, .mission-header, .delivery-info');
 	/*shut down transition if mobile*/	
 	if( tools.mobile.check ) { 
-		$fadeElems.add( $noRotate ).css({
+		$noRotate.css({
 			'transition': 'none',
 			'-webkit-transition': 'none',
 			'-moz-transition': 'none',

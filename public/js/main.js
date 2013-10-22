@@ -296,17 +296,17 @@ $('.calculation-form .black-button').click( function(){
 	}
 	
 	if(error == 0) {
+	$('form.calculation-form').ajaxSubmit({
+		 beforeSubmit:function(formData, jqForm, options){
+			alert('ddddd');
+		}
+		, success:function(response,statusText,xhr,jqForm){
+			$('.calculation-form').html('<div class="calculation-success">Ваша форма заявки на расчет зеленой стены успешно отправлена.</div>');
+		}
+	});
+
 		$('.calc-send').html('Идет отправка...');
 		$('.calc-send').attr('disabled', 'disabled');
-		$.post( "calc", { 		type: $type,
-								name: $('.name-calc-input').val(), 
-								email: $('.email-calc-input').val(),
-								file: $('.NFI-filename').val()})
-  		.done(function(data) {
-	    	if(data == 'success') {
-				$('.calculation-form').html('<div class="calculation-success">Ваша форма заявки на расчет зеленой стены успешно отправлена.</div>');
-			}
-  		});
 	}
 });
 $('.recall-send').click( function(){
@@ -337,7 +337,7 @@ $('.recall-send').click( function(){
 	    	if(data == 'success') {
 				$('.order-a-call').html('<form class="is-recall call-form-success">' +
 										'<div class="form-close">✕</div>' + 
-										'<div class="calculation-header">Скачать 3D-модели</div>' +
+										'<div class="calculation-header">Заказать звонок</div>' +
 										'<div style="display: none;" class="is-recall calculation-success">Спасибо за внимание, скоро мы свяжемся с вами.</div>' +
 										'</form>').find('.is-recall.call-form-success .is-recall.calculation-success').fadeIn( 800 );
 				$('.recall-send').fadeOut( 800 );

@@ -41,7 +41,7 @@
         			<div class="contacts">
         				Возникли вопросы? Звони!
         				<span class="phone-number">8-800-550-00-76</span>
-        				<span class="free-call">Звонок бесплатный с любого телефона</span>
+        				<span class="free-call">Звонок бесплатный с любого телефона.</span>
         				<button class="site-button pretty-button green-button">Заказать звонок</button>
         			</div>
         			<h2 class="mission-header">Вертикальное озеленение<br>и зеленые стены<span>из стабилизированных растений</span></h2>
@@ -75,10 +75,6 @@
         					<a href="<?=URL::to('img/slides/02.jpg');?>" ></a>
         					<a href="<?=URL::to('img/slides/03.jpg');?>" ></a>
         					<a href="<?=URL::to('img/slides/04.jpg');?>" ></a>
-        					<a href="<?=URL::to('img/slides/05.jpg');?>" ></a>
-        					<a href="<?=URL::to('img/slides/06.jpg');?>" ></a>
-        					<a href="<?=URL::to('img/slides/07.jpg');?>" ></a>
-        					<a href="<?=URL::to('img/slides/08.jpg');?>" ></a>
         				</div>
         			</div>
         		</div>        		
@@ -470,7 +466,7 @@
 	    			<div class="clear"></div>
 	    			<div class="input-and-error name-calc-div">
 						<input class="text-input name-calc-input" type="text" placeholder="Меня зовут">
-						<div class="error-text">Вы не заполнили обязательное поле</div>
+						<div class="error-text">Вы не заполнили обязательное поле.</div>
 					</div>
 	    			<div class="input-and-error email-calc-div">
 						<input class="text-input email-calc-input" type="text" placeholder="Моя электронная почта">
@@ -526,15 +522,15 @@
 					<div class="calculation-header">Заказать звонок</div>					
 					<div class="input-and-error name-div">
 						<input class="text-input name-input" type="text" placeholder="Меня зовут">
-						<div class="error-text">Вы не заполнили обязательное поле</div>
+						<div class="error-text">Вы не заполнили обязательное поле.</div>
 					</div>
 					<div class="input-and-error phone-div">
 						<input class="text-input phone-input" type="text" placeholder="Мой телефон">
-						<div class="error-text">Вы не заполнили обязательное поле</div>
+						<div class="error-text">Вы не заполнили обязательное поле.</div>
 					</div>
 					<div class="input-and-error time-div">
 						<input class="text-input time-input" type="text" placeholder="Желаемое время звонка">
-						<div class="error-text">Вы не заполнили обязательное поле</div>
+						<div class="error-text">Вы не заполнили обязательное поле.</div>
 					</div>
 					<button class="site-button pretty-button black-button bottom-button recall-send">Отправить</button>
 				</form>				
@@ -545,11 +541,11 @@
 					<div class="calculation-header">Скачать 3D-модели</div>					
 					<div class="input-and-error name-3d-div">
 						<input class="text-input name-3d-input" type="text" placeholder="Меня зовут">
-						<div class="error-text">Вы не заполнили обязательное поле</div>
+						<div class="error-text">Вы не заполнили обязательное поле.</div>
 					</div>
 					<div class="input-and-error email-3d-div">
 						<input class="text-input email-3d-input" type="text" placeholder="Моя электронная почта">
-						<div class="error-text">Вы не заполнили обязательное поле</div>
+						<div class="error-text">Вы не заполнили обязательное поле.</div>
 					</div>					
 					<button type="button" class="site-button pretty-button black-button bottom-button download-send">Скачать</button>
 				</form>			

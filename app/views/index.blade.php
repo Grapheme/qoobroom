@@ -68,15 +68,17 @@
         					data-transition="slide"
         					data-loop="true"
         					data-nav="false">
-        					<img src="<?=URL::to('img/slides/01.png');?>" alt="">
-        					<img src="<?=URL::to('img/slides/02.jpg');?>" alt="">
-        					<img src="<?=URL::to('img/slides/03.jpg');?>" alt="">
-        					<img src="<?=URL::to('img/slides/04.jpg');?>" alt="">
-        					<img src="<?=URL::to('img/slides/05.jpg');?>" alt="">
-        					<img src="<?=URL::to('img/slides/06.jpg');?>" alt="">
-        					<img src="<?=URL::to('img/slides/07.jpg');?>" alt="">
-        					<img src="<?=URL::to('img/slides/08.jpg');?>" alt="">
-        					<img src="<?=URL::to('img/slides/09.jpg');?>" alt="">
+        					
+        					<!-- This will force fotorama to load images asynchronously -->
+        					<a href="<?=URL::to('img/slides/01.png');?>" ></a>
+        					<a href="<?=URL::to('img/slides/02.jpg');?>" ></a>
+        					<a href="<?=URL::to('img/slides/03.jpg');?>" ></a>
+        					<a href="<?=URL::to('img/slides/04.jpg');?>" ></a>
+        					<a href="<?=URL::to('img/slides/05.jpg');?>" ></a>
+        					<a href="<?=URL::to('img/slides/06.jpg');?>" ></a>
+        					<a href="<?=URL::to('img/slides/07.jpg');?>" ></a>
+        					<a href="<?=URL::to('img/slides/08.jpg');?>" ></a>
+        					<a href="<?=URL::to('img/slides/09.jpg');?>" ></a>
         				</div>
         			</div>
         		</div>        		

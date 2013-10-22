@@ -127,7 +127,6 @@ function checkRadios() {
 }
 function checkScroll() {
 	if ( tools.mobile.check ) {
-		dontAnimateMobile();
 		return;
 	}
 	$bodyPosition = $(document).scrollTop();
@@ -184,6 +183,11 @@ $(window).scroll( function(){
 $(document).ready( function(){
 	animateOnLoad();
 	checkScroll();
+
+	if( tools.mobile.check ) {
+		dontAnimateMobile();
+	}
+	
 /*-------------input styling init-----------------*/	
 	$(".designer-docs").nicefileinput({
 		label : 'Выберите файл'

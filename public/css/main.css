@@ -571,11 +571,11 @@ footer .social-links li { margin: 18px 6px 17px; }
 /*animation elements trasnlate and transition styles*/
 .left__fade, .right__fade, .interier-romb.right-int, .interier-romb.left-int, .mission .mission-header, .mission .contacts, .delivery-info, .left_func, .right_func {
 	opacity: 0;
-	transition: all 2s ease;
-	-webkit-transition: all 2s ease;
-	-moz-transition: all 2s ease;
-	-o-transition: all 2s ease;
-	-ms-transition: all 2s ease;
+	transition: all 1.5s ease;
+	-webkit-transition: all 1.5s ease;
+	-moz-transition: all 1.5s ease;
+	-o-transition: all 1.5s ease;
+	-ms-transition: all 1.5s ease;
 }
 .left_func, .right_func { 
 	display: block;

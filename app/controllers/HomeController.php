@@ -67,7 +67,7 @@ class HomeController extends BaseController {
 		
 		$name = Input::get('name');
 		$email = Input::get('email');
-		$link = URL::to('download/QRGreenWall.pdf');
+		$link = URL::to('download/qoobroom.rar');
 		$validator = Validator::make(
 			array('name'=>$name,'email'=>$email),
 			array('name'=>'required|min:3','email'=>'required|min:5')

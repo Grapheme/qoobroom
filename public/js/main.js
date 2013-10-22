@@ -74,8 +74,7 @@ function togglePopup(elem) {
 /*-------Set an animation for romb elemnts onLoad event-------*/
 function animateOnLoad() {		
 	/*set elements to animate*/
-	var $fadeElems = $('.rombic-figures .right__fade, .rombic-figures .left__fade'),
-		$noRotate = $('.interier-romb.right-int, .interier-romb.left-int, .contacts, .mission-header, .delivery-info');
+	var $noRotate = $('.rombic-figures .right__fade, .rombic-figures .left__fade, .interier-romb.right-int, .interier-romb.left-int, .contacts, .mission-header, .delivery-info');
 	/*shut down transition if mobile*/	
 	if( tools.mobile.check ) { 
 		$fadeElems.add( $noRotate ).css({
@@ -86,7 +85,6 @@ function animateOnLoad() {
 			'-ms-transition': 'none'
 		}); 
 	}			
-	$fadeElems.css({ 'opacity': '1', '-moz-transform': 'translate(0px, 0px) rotate(45deg)', '-o-transform': 'translate(0px, 0px) rotate(45deg)', '-webkit-transform': 'translate3d(0px, 0px, 0px) rotate(45deg)', '-ms-transform': 'translate(0px, 0px) rotate(45deg)', 'transform': 'translate(0px, 0px) rotate(45deg)'}); 
 	$noRotate.css({ 'opacity': '1', '-moz-transform': 'translate(0px, 0px)', '-o-transform': 'translate(0px, 0px)', '-webkit-transform': 'translate3d(0px, 0px, 0px)', '-ms-transform': 'translate(0px, 0px)', 'transform': 'translate(0px, 0px)'}); 
 }
 function dontAnimateMobile() {

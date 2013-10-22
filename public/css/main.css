@@ -140,28 +140,37 @@ body.modal-open { width: 100%; height: 100%; overflow: hidden; }
 .rombic-figures { height: 700px; overflow: hidden; position: relative; width: 100%; }
 .rombic-figures .mini-wrapper { position: relative; width: 980px; height: 700px; margin: 0 auto; overflow: visible; }
 
-.dl-romb { position: absolute; width: 184px; height: 184px; cursor: pointer;
-	-webkit-transform: rotate(45deg);
-       -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg); 
-         -o-transform: rotate(45deg);
-            transform: rotate(45deg);
-    transition: background .3s ease;
+.dl-romb { position: absolute; width: 184px; height: 184px; cursor: pointer; }
+.decoration-romb {
+	transition: background .3s ease;
 	-webkit-transition: background .3s ease;
 	-moz-transition: background .3s ease;
 	-o-transition: background .3s ease;
 	-ms-transition: background .3s ease;
 }
-.model-dl, 
-.proj-present { background: #f7f7f7;  }
+.model-dl .decoration-romb, 
+.proj-present .decoration-romb { position: relative; width: 100%; height: 100%; background: #F7F7F7; z-index: -1;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg); 
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);    
+}
+.proj-present .decoration-romb { left: 2px; }    
 .proj-present { width: 209px; height: 212px; }
-.model-dl:hover, 
-.proj-present:hover { background: #efefef; }
-.free-calc { background: #8aae3c; }
-.free-calc:hover { background: #a8cc5a; }
+.model-dl:hover .decoration-romb, 
+.proj-present:hover .decoration-romb { background: #efefef; }
+.free-calc .decoration-romb { position: relative; z-index: -1; background: #8aae3c; width: 100%; height: 100%; 
+	-webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg); 
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg); 
+}
+.free-calc:hover .decoration-romb { background: #a8cc5a; }
 
 .romb-cont span{ display: block; }
-.model-dl .romb-cont span { display: block; margin: 0.5em; font: .875em 'intro-book', sans-serif; color: #000; 
+.model-dl .romb-cont span { display: block; margin: 0.5em; font: .875em sans-serif; color: #000; 
 	-webkit-transform-style: preserve-3d;
 	-webkit-backface-visibility: hidden;
 	-webkit-font-smoothing: antialiased;
@@ -172,27 +181,22 @@ body.modal-open { width: 100%; height: 100%; overflow: hidden; }
 	-webkit-font-smoothing: antialiased;
 }
 
-.proj-present .romb-cont span { margin: 0.3em 0; font: 0.875em 'intro-book',sans-serif; 
+.proj-present .romb-cont span { margin: 0.3em 0; font: 0.875em sans-serif; color: #222;
 	-webkit-transform-style: preserve-3d;
 	-webkit-backface-visibility: hidden;
 	-webkit-font-smoothing: antialiased;
 }
 .model-dl .romb-cont .green-span,
-.proj-present .romb-cont .green-span { display: block; margin: .35em 0 0; font: .875em 'intro-book', sans-serif; color: #8aae3c; text-transform: uppercase; 
+.proj-present .romb-cont .green-span { display: block; margin: .35em 0 0; font: .875em sans-serif; color: #8aae3c; text-transform: uppercase; 
 	-webkit-transform-style: preserve-3d;
 	-webkit-backface-visibility: hidden;
 	-webkit-font-smoothing: antialiased;
 }
 .romb-cont { position: absolute; text-align: center; text-decoration: none;
-	-webkit-transform: rotate(-45deg);
-       -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg); 
-         -o-transform: rotate(-45deg);
-            transform: rotate(-45deg); 
 }
 .model-dl .romb-cont { top: 24px; right: 9px; }
-.free-calc .romb-cont { top: 59px; right: 14px; }
-.proj-present .romb-cont { top: 30px; right: 24px; }
+.free-calc .romb-cont { top: 59px; right: 21px; }
+.proj-present .romb-cont { top: 30px; right: 28px; }
 
 .free-calc .romb-cont a { border-bottom: 1px solid #fff; color: #fff; font: 1.25em / 1.3em 'intro-book', sans-serif; text-transform: uppercase; text-decoration: none; 
 	-webkit-transform-style: preserve-3d;
@@ -609,25 +613,25 @@ footer .social-links li { margin: 18px 6px 17px; }
 	-o-transform: translate(1000px, 0px);
 }
 .dl-romb.model-dl {
-	-webkit-transform: translate3d(-900px, 0px, 0px) rotate(45deg); 
-	-ms-transform: translate(-900px, 0px) rotate(45deg); 
-	transform: translate(-900px, 0px) rotate(45deg);
-	-moz-transform: translate(-900px, 0px) rotate(45deg);
-	-o-transform: translate(-900px, 0px) rotate(45deg);
+	-webkit-transform: translate3d(-900px, 0px, 0px); 
+	-ms-transform: translate(-900px, 0px); 
+	transform: translate(-900px, 0px);
+	-moz-transform: translate(-900px, 0px);
+	-o-transform: translate(-900px, 0px);
 }
 .dl-romb.free-calc {
-	-webkit-transform: translate3d(1400px, 0px, 0px) rotate(45deg); 
-	-ms-transform: translate(1400px, 0px) rotate(45deg); 
-	transform: translate(1400px, 0px) rotate(45deg);
-	-moz-transform: translate(1400px, 0px) rotate(45deg);
-	-o-transform: translate(1400px, 0px) rotate(45deg);
+	-webkit-transform: translate3d(1400px, 0px, 0px); 
+	-ms-transform: translate(1400px, 0px); 
+	transform: translate(1400px, 0px);
+	-moz-transform: translate(1400px, 0px);
+	-o-transform: translate(1400px, 0px);
 }
 .dl-romb.proj-present {
-	-webkit-transform: translate3d(1200px, 0px, 0px) rotate(45deg); 
-	-ms-transform: translate(1200px, 0px) rotate(45deg); 
-	transform: translate(1200px, 0px) rotate(45deg);
-	-moz-transform: translate(1200px, 0px) rotate(45deg);
-	-o-transform: translate(1200px, 0px) rotate(45deg);
+	-webkit-transform: translate3d(1200px, 0px, 0px); 
+	-ms-transform: translate(1200px, 0px); 
+	transform: translate(1200px, 0px);
+	-moz-transform: translate(1200px, 0px);
+	-o-transform: translate(1200px, 0px);
 }
 .interier-romb.right-int {
 	-webkit-transform: translate3d(1600px, 0px, 0px); 

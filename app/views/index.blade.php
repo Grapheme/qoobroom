@@ -57,6 +57,7 @@
         				<span>3-D модели растений</span>
         				<span class="green-span" href="#">Скачать</span>
         			</a>
+        			<div class="decoration-romb"></div>
         		</div>        		
         		<div class="rombic-slideshow">
         			<div class="rombic-slideshow-cont">
@@ -85,6 +86,7 @@
         				<a href="#">Бесплатный<br>расчет</a>
         				<span>зеленой стены</span>
         			</div>
+        			<div class="decoration-romb"></div>
         		</div>
         		<div class="interier-romb left-int">
         			<img src="<?=URL::to('img/rombic/int-left.png');?>" alt="">
@@ -98,6 +100,7 @@
         					<span>Презентация проекта</span>
         					<span class="green-span">Скачать</span>        				
         			</a>
+        			<div class="decoration-romb"></div>
         		</div>
         	</div>	
         </section> 

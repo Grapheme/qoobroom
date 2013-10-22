@@ -33,20 +33,18 @@ class HomeController extends BaseController {
 
 	public function calc(){
 		
-		$typep = Input::get('type');
+		$typep = Input::get('old_radio');
 		if($typep=='1') $type = "дизайнер";
 		if($typep=='0') $type = "покупатель";
 		$name = Input::get('name');
 		$email = Input::get('email');
-		$file = Input::file('file');
-		/*$destinationPath = "/";
-		$filename = "3";
-		$upload_success = Input::upload('file', $destinationPath, $filename);
-		if( $upload_success ) {
-			return Response::json('success', 200);
-		} else {
-			return Response::json('error', 400);
-		}*/
+		 $file = FALSE;
+		 if(isset($_FILES) && $_FILES['file']['error'] == 0):
+			if(move_uploaded_file($_FILES['file']['tmp_name'],getcwd().'/download/'.$_FILES['file']['name'])):
+			 $file = getcwd().'\download\\'.$_FILES['file']['name'];
+			endif;
+		   endif;
+		$filestr = "http://qoobroom.ru/download/".$_FILES['file']['name'];
 		$validator = Validator::make(
 			array('name'=>$name,'email'=>$email),
 			array('name'=>'required|min:3','email'=>'required|min:5')
@@ -55,11 +53,10 @@ class HomeController extends BaseController {
 			return "false";
 		else:
 			DB::insert('insert into users (name, email) values (?, ?)',array($name, $email));
-			$data = array('type' => $type,'name' => $name,'email' => $email);
+			$data = array('type' => $type,'name' => $name,'email' => $email, 'file' => $filestr);
 			Mail::send('emails.calc', $data, function($message){
 				$message->from('noreply@QoobRoom.com','QoobRoom');
-				$message->to('greenwall@qoobroom.ru')->subject('QoobRoom - Заказ расчета стоимости');
-				//$message->attach($file);
+				$message->to('thedamaxstudio@gmail.com')->cc('sm@realitygroup.ru')->cc('greenwall@qoobroom.ru')->subject('QoobRoom - Заказ расчета стоимости');
 			});
 			return "success";
 		endif;

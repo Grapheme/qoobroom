@@ -485,9 +485,7 @@
 	    				трудовой книжки.	    				
 	    			</div>
 	    			<input type="file" class="designer-docs">
-	    			<div class="site-button-container left_func">
-	    				<button type="button" class="site-button pretty-button black-button bottom-button calc-send">Рассчитать бесплатно</button>
-	    			</div>
+	    			<button type="button" class="site-button pretty-button black-button bottom-button calc-send">Рассчитать бесплатно</button>
 	    		</form>
 	    	</div>
 	    </section>

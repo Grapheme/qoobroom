@@ -338,6 +338,7 @@ body.modal-open { width: 100%; height: 100%; overflow: hidden; }
 /* Calculation-form */
 .calculation-success { padding: 115px 0; text-align: center; }
 .calculation-form-section { margin: 0; padding: 2.5em 0 3.5em; background: #8aae3c;  }
+.calculation-form-section .mini-wrapper { padding: 0 0 4px; }
 .calculation-form { width: 767px; margin: 0 auto; text-align: center; }
 .calculation-form label { font: 1em 'intro-bold'; }
 .calculation-form-section .black-button { padding: 17px 15px 13px; }

@@ -186,7 +186,9 @@
 	    				Скачайте наш презентационный буклет с примерами реализации<br>с разными видами растений с полезной информацией.<br>
 	    				Показывайте вашим клиентам, держите под рукой 
 	    			</span>
-	    			<a href="<?=URL::to('download/QRGreenWall.pdf');?>" target="_blank" class="site-button pretty-button black-button right_func">Скачать презентацию</a>
+	    			<span class="site-button-container right_func">
+	    				<a href="<?=URL::to('download/QRGreenWall.pdf');?>" target="_blank" class="site-button pretty-button black-button">Скачать презентацию</a>
+	    			</span>
 	    		</div>
 	    	</div>
 	    </section>
@@ -246,7 +248,9 @@
 	    				стабилизированных растений, пользуясь которыми, Вы легко можете создать<br>
 	    				понятный заказчику, наглядный образ его будущей зеленой стены. 
 	    			</span>
-	    			<button class="site-button pretty-button black-button left_func">Скачать 3D модели</button>
+	    			<span class="site-button-container left_func">
+	    				<button class="site-button pretty-button black-button">Скачать 3D модели</button>
+	    			</span>
 	    		</div>
 	    	</div>
 	    </section>
@@ -481,7 +485,9 @@
 	    				трудовой книжки.	    				
 	    			</div>
 	    			<input type="file" class="designer-docs">
-	    			<button type="button" class="site-button pretty-button black-button bottom-button calc-send">Рассчитать бесплатно</button>
+	    			<div class="site-button-container left_func">
+	    				<button type="button" class="site-button pretty-button black-button bottom-button calc-send">Рассчитать бесплатно</button>
+	    			</div>
 	    		</form>
 	    	</div>
 	    </section>
@@ -490,7 +496,9 @@
 			    <span class="boldlighted-span left_func">Нам можно позвонить</span>
 			    <div class="phone-number right_func">8-800-550-00-76</div>
 			    <span class="a-little-quote left_func">Звонок бесплатный с любого телефона </span>
-			    <button class="site-button pretty-button green-button right_func">Заказать звонок</button>
+			    <div class="site-button-container right_func">
+			    	<button class="site-button pretty-button green-button">Заказать звонок</button>
+			    </div>
 			    <div class="email">
 			    	<span class="boldlighted-span right_func">Или написать</span>
 			    	<span class="green-email left_func"><a href="mailto:greenwall@qoobroom.ru">greenwall@qoobroom.ru</a></span>

@@ -100,15 +100,15 @@ function animateOnScroll(scrollParent) {
 			setTimeout( function(){
 				that.css({ 'opacity': '1', '-moz-transform': 'translate(0px, 0px)', '-o-transform': 'translate(0px, 0px)', '-webkit-transform': 'translate3d(0px, 0px, 0px)', '-ms-transform': 'translate(0px, 0px)', 'transform': 'translate(0px, 0px)'}); 
 			}, timer);	
-			timer += 300;
+			timer += 200;
 		});
-		timer = 150;
+		timer = 100;
 		scrollParent.find('.right_func').each( function(){			
 			var rightThat = $(this);
 			setTimeout( function(){
 				rightThat.css({ 'opacity': '1', '-moz-transform': 'translate(0px, 0px)', '-o-transform': 'translate(0px, 0px)', '-webkit-transform': 'translate3d(0px, 0px, 0px)', '-ms-transform': 'translate(0px, 0px)', 'transform': 'translate(0px, 0px)'}); 
 			}, timer);	
-			timer += 300;
+			timer += 200;
 		});
 	}
 }

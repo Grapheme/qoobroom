@@ -41,7 +41,7 @@
         			<div class="contacts">
         				Возникли вопросы? Звони!
         				<span class="phone-number">8-800-550-00-76</span>
-        				<span class="free-call">Звонок бесплатный с любого телефона.</span>
+        				<span class="free-call">Звонок бесплатный с любого телефона</span>
         				<button class="site-button pretty-button green-button">Заказать звонок</button>
         			</div>
         			<h2 class="mission-header">Вертикальное озеленение<br>и зеленые стены<span>из стабилизированных растений</span></h2>
@@ -52,12 +52,11 @@
         <section class="rombic-figures">
         	<div class="mini-wrapper">
         		<div class="dl-romb model-dl left__fade">
-        			<a href="#" class="romb-cont">
+        			<div class="romb-cont">
         				<img src="<?=URL::to('img/rombic/grass_block.png');?>" alt="">
         				<span>3-D модели растений</span>
-        				<span class="green-span" href="#">Скачать</span>
-        			</a>
-        			<div class="decoration-romb"></div>
+        				<a href="#">Скачать</a>
+        			</div>
         		</div>        		
         		<div class="rombic-slideshow">
         			<div class="rombic-slideshow-cont">
@@ -68,13 +67,17 @@
         					data-swipe="true"
         					data-transition="slide"
         					data-loop="true"
-        					data-nav="false">
-        					
-        					<!-- This will force fotorama to load images asynchronously -->
-        					<a href="<?=URL::to('img/slides/01.jpg');?>" ></a>
-        					<a href="<?=URL::to('img/slides/02.jpg');?>" ></a>
-        					<a href="<?=URL::to('img/slides/03.jpg');?>" ></a>
-        					<a href="<?=URL::to('img/slides/04.jpg');?>" ></a>
+        					data-nav="false"
+        					data-autoplay="30000">
+        					<img src="<?=URL::to('img/slides/01.png');?>" alt="">
+        					<img src="<?=URL::to('img/slides/02.jpg');?>" alt="">
+        					<img src="<?=URL::to('img/slides/03.jpg');?>" alt="">
+        					<img src="<?=URL::to('img/slides/04.jpg');?>" alt="">
+        					<img src="<?=URL::to('img/slides/05.jpg');?>" alt="">
+        					<img src="<?=URL::to('img/slides/06.jpg');?>" alt="">
+        					<img src="<?=URL::to('img/slides/07.jpg');?>" alt="">
+        					<img src="<?=URL::to('img/slides/08.jpg');?>" alt="">
+        					<img src="<?=URL::to('img/slides/09.jpg');?>" alt="">
         				</div>
         			</div>
         		</div>        		
@@ -83,7 +86,6 @@
         				<a href="#">Бесплатный<br>расчет</a>
         				<span>зеленой стены</span>
         			</div>
-        			<div class="decoration-romb"></div>
         		</div>
         		<div class="interier-romb left-int">
         			<img src="<?=URL::to('img/rombic/int-left.png');?>" alt="">
@@ -92,19 +94,18 @@
 					<img src="<?=URL::to('img/rombic/int-right.png');?>" alt="">
 				</div>
         		<div class="dl-romb proj-present right__fade">
-        			<a href="<?=URL::to('download/QRGreenWall.pdf');?>" target="_blank" class="romb-cont">
-        					<img src="<?=URL::to('img/rombic/green_book.png');?>" alt="">
-        					<span>Презентация проекта</span>
-        					<span class="green-span">Скачать</span>        				
-        			</a>
-        			<div class="decoration-romb"></div>
+        			<div class="romb-cont">
+        				<img src="<?=URL::to('img/rombic/green_book.png');?>" alt="">
+        				<span>Презентация проекта</span>
+        				<a href="#">Скачать</a>
+        			</div>
         		</div>
         	</div>	
         </section> 
         <section class="video-in-pict">
         	<div class="mini-wrapper">
 	        	<div class="ipad-youtube">
-	        		<img src="<?=URL::to('img/greening.jpg');?>" alt="">	        		
+	        		<iframe width="588" height="429" src="//www.youtube.com/embed/cTqgtWVZfD0" frameborder="0" allowfullscreen></iframe>
 	        	</div>
         	</div>
         </section>
@@ -186,9 +187,7 @@
 	    				Скачайте наш презентационный буклет с примерами реализации<br>с разными видами растений с полезной информацией.<br>
 	    				Показывайте вашим клиентам, держите под рукой 
 	    			</span>
-	    			<span class="site-button-container right_func">
-	    				<a href="<?=URL::to('download/QRGreenWall.pdf');?>" target="_blank" class="site-button pretty-button black-button">Скачать презентацию</a>
-	    			</span>
+	    			<a href="<?=URL::to('download/QRGreenWall.pdf');?>" class="site-button pretty-button black-button right_func">Скачать презентацию</a>
 	    		</div>
 	    	</div>
 	    </section>
@@ -248,9 +247,7 @@
 	    				стабилизированных растений, пользуясь которыми, Вы легко можете создать<br>
 	    				понятный заказчику, наглядный образ его будущей зеленой стены. 
 	    			</span>
-	    			<span class="site-button-container left_func">
-	    				<button class="site-button pretty-button black-button">Скачать 3D модели</button>
-	    			</span>
+	    			<button class="site-button pretty-button black-button left_func">Скачать 3D модели</button>
 	    		</div>
 	    	</div>
 	    </section>
@@ -303,13 +300,13 @@
 		       		<li class="places-item left_func">
 		       			<div class="places-item-container">
 			       			<img src="<?=URL::to('img/places/8.jpg');?>" alt="">
-			       			<span class="a-little-quote right_func">Салоны красоты, SPA</span>
+			       			<span class="a-little-quote right_func">Частные дома и квартиры</span>
 		       			</div>
 		       		</li>
 		       		<li class="places-item left_func">
 		       			<div class="places-item-container">
 			       			<img src="<?=URL::to('img/places/9.jpg');?>" alt="">
-			       			<span class="a-little-quote right_func">Частные дома и квартиры</span>
+			       			<span class="a-little-quote right_func">Салоны красоты, SPA</span>
 		       			</div>
 		       		</li>
 		       	</ul>
@@ -371,7 +368,7 @@
 		    </section>
 		    <section class="second-video">
         	    <div class="ipad-youtube">
-        	    	<img src="<?=URL::to('img/repairschool.jpg');?>" alt="">	        			
+	        		<iframe width="650" height="371" src="//www.youtube.com/embed/p7rynEEcKkQ" frameborder="0" allowfullscreen></iframe>	
 	        	</div>        	
        		</section>       		
 	    </article>
@@ -406,7 +403,7 @@
 			    <ul class="projects-list clearfix">
 			    	<li class="projects-item left_func">
 			    		<div class="projects-item-container">
-				   			<a target="_blank" href="<?=URL::to('download/dlya_djentelmenov.pdf');?>"><img src="<?=URL::to('img/realized_projects/1.jpg');?>" alt=""></a>
+				   			<img src="<?=URL::to('img/realized_projects/1.jpg');?>" alt="">
 				   			<div class="project-desc right_func">
 				   				<span class="bold">Salon Interior</span>. No 4. апрель 2012
 				   				<span class="to_uppercase">Для джентельменов</span>
@@ -415,7 +412,7 @@
 			    	</li>
 			    	<li class="projects-item left_func">
 			    		<div class="projects-item-container">
-				   			<a target="_blank" href="<?=URL::to('download/takoe_vkusnoe_nebo.pdf');?>"><img src="<?=URL::to('img/realized_projects/2.jpg');?>" alt=""></a>
+				   			<img src="<?=URL::to('img/realized_projects/2.jpg');?>" alt="">
 				   			<div class="project-desc right_func">
 				   				<span class="bold">HiHome</span>. No 8. август 2012
 				   				<span class="to_uppercase">Такое вкусное небо</span>
@@ -424,7 +421,7 @@
 			    	</li>
 			    	<li class="projects-item left_func">
 			    		<div class="projects-item-container">
-				   			<a target="_blank" href="<?=URL::to('download/vse_ottenki_neba.pdf');?>"><img src="<?=URL::to('img/realized_projects/3.jpg');?>" alt=""></a>
+				   			<img src="<?=URL::to('img/realized_projects/3.jpg');?>" alt="">
 				   			<div class="project-desc right_func">
 				   				<span class="bold">Salon Interior</span>. No 10. октябрь 2012
 				   				<span class="to_uppercase">Все оттенки неба</span>
@@ -452,7 +449,7 @@
 		<section class="calculation-form-section clearfix">
 	    	<div class="mini-wrapper">
 	    		<header class="calculation-header">Да! Я хочу рассчитать зеленую стену из<br>cтабилизированных растений!</header>
-	    		<form class="calculation-form">
+	    		<form class="calculation-form" action="calc" method="POST" enctype="multipart/form-data">
 	    			<div class="radio_buttons">
 	    				<div>
 			    			<input class="old_radio" checked type="radio" name="old_radio" id="iDesigner" onclick="" value="1">
@@ -469,11 +466,11 @@
 	    			</div>
 	    			<div class="clear"></div>
 	    			<div class="input-and-error name-calc-div">
-						<input class="text-input name-calc-input" type="text" placeholder="Меня зовут">
-						<div class="error-text">Вы не заполнили обязательное поле.</div>
+						<input name="name" class="text-input name-calc-input" type="text" placeholder="Меня зовут">
+						<div class="error-text">Вы не заполнили обязательное поле</div>
 					</div>
 	    			<div class="input-and-error email-calc-div">
-						<input class="text-input email-calc-input" type="text" placeholder="Моя электронная почта">
+						<input name="email" class="text-input email-calc-input" type="text" placeholder="Моя электронная почта">
 						<div class="error-text">Моя электронная почта</div>
 					</div>
 					<div class="form-invite form-invite-buyers">
@@ -484,7 +481,7 @@
 	    				Чтобы подтвердить, что вы - дизайнер, вышлите нам копию диплома или копию<br>
 	    				трудовой книжки.	    				
 	    			</div>
-	    			<input type="file" class="designer-docs">
+	    			<input name="file" type="file" class="designer-docs">
 	    			<button type="button" class="site-button pretty-button black-button bottom-button calc-send">Рассчитать бесплатно</button>
 	    		</form>
 	    	</div>
@@ -494,9 +491,7 @@
 			    <span class="boldlighted-span left_func">Нам можно позвонить</span>
 			    <div class="phone-number right_func">8-800-550-00-76</div>
 			    <span class="a-little-quote left_func">Звонок бесплатный с любого телефона </span>
-			    <div class="site-button-container right_func">
-			    	<button class="site-button pretty-button green-button">Заказать звонок</button>
-			    </div>
+			    <button class="site-button pretty-button green-button right_func">Заказать звонок</button>
 			    <div class="email">
 			    	<span class="boldlighted-span right_func">Или написать</span>
 			    	<span class="green-email left_func"><a href="mailto:greenwall@qoobroom.ru">greenwall@qoobroom.ru</a></span>
@@ -528,15 +523,15 @@
 					<div class="calculation-header">Заказать звонок</div>					
 					<div class="input-and-error name-div">
 						<input class="text-input name-input" type="text" placeholder="Меня зовут">
-						<div class="error-text">Вы не заполнили обязательное поле.</div>
+						<div class="error-text">Вы не заполнили обязательное поле</div>
 					</div>
 					<div class="input-and-error phone-div">
 						<input class="text-input phone-input" type="text" placeholder="Мой телефон">
-						<div class="error-text">Вы не заполнили обязательное поле.</div>
+						<div class="error-text">Вы не заполнили обязательное поле</div>
 					</div>
 					<div class="input-and-error time-div">
 						<input class="text-input time-input" type="text" placeholder="Желаемое время звонка">
-						<div class="error-text">Вы не заполнили обязательное поле.</div>
+						<div class="error-text">Вы не заполнили обязательное поле</div>
 					</div>
 					<button class="site-button pretty-button black-button bottom-button recall-send">Отправить</button>
 				</form>				
@@ -547,11 +542,11 @@
 					<div class="calculation-header">Скачать 3D-модели</div>					
 					<div class="input-and-error name-3d-div">
 						<input class="text-input name-3d-input" type="text" placeholder="Меня зовут">
-						<div class="error-text">Вы не заполнили обязательное поле.</div>
+						<div class="error-text">Вы не заполнили обязательное поле</div>
 					</div>
 					<div class="input-and-error email-3d-div">
 						<input class="text-input email-3d-input" type="text" placeholder="Моя электронная почта">
-						<div class="error-text">Вы не заполнили обязательное поле.</div>
+						<div class="error-text">Вы не заполнили обязательное поле</div>
 					</div>					
 					<button type="button" class="site-button pretty-button black-button bottom-button download-send">Скачать</button>
 				</form>			
@@ -560,6 +555,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="<?=URL::to('js/vendor/jquery-1.10.2.min.js');?>"><\/script>')</script>
         <script src="<?=URL::to('js/plugins.js');?>"></script>
+		<script src="<?=URL::to('js/vendor/jquery.form.js');?>"></script>
         <script src="<?=URL::to('js/main.js');?>"></script>
 		<script src="<?=URL::to('js/vendor/input_style.js');?>"></script>
 		<script src="<?=URL::to('js/vendor/fotorama.js');?>"></script>
@@ -572,32 +568,5 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
-        <!-- Yandex.Metrika counter -->
-		<script type="text/javascript">
-		(function (d, w, c) {
-		    (w[c] = w[c] || []).push(function() {
-		        try {
-		            w.yaCounter22657276 = new Ya.Metrika({id:22657276,
-		                    webvisor:true,
-		                    clickmap:true,
-		                    trackLinks:true,
-		                    accurateTrackBounce:true});
-		        } catch(e) { }
-		    });
-		
-		    var n = d.getElementsByTagName("script")[0],
-		        s = d.createElement("script"),
-		        f = function () { n.parentNode.insertBefore(s, n); };
-		    s.type = "text/javascript";
-		    s.async = true;
-		    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-		
-		    if (w.opera == "[object Opera]") {
-		        d.addEventListener("DOMContentLoaded", f, false);
-		    } else { f(); }
-		})(document, window, "yandex_metrika_callbacks");
-		</script>
-		<noscript><div><img src="//mc.yandex.ru/watch/22657276" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-		<!-- /Yandex.Metrika counter -->
     </body>
 </html>

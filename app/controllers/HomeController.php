@@ -24,7 +24,7 @@ class HomeController extends BaseController {
 		else:
 			$data = array('name'=>$name,'phone'=>$phone,'time'=>$time);
 			Mail::send('emails.recall',$data,function($message){
-				$message->from('noreply@QoobRoom.com','QoobRoom');
+				$message->from('noreply@qoobroom.ru','QoobRoom');
 				$message->to('thedamaxstudio@gmail.com')->cc('sm@realitygroup.ru')->cc('greenwall@qoobroom.ru')->subject('QoobRoom - Заказ звонка');
 			});
 			return 'success';
@@ -55,7 +55,7 @@ class HomeController extends BaseController {
 			DB::insert('insert into users (name, email) values (?, ?)',array($name, $email));
 			$data = array('type' => $type,'name' => $name,'email' => $email, 'file' => $filestr);
 			Mail::send('emails.calc', $data, function($message){
-				$message->from('noreply@QoobRoom.com','QoobRoom');
+				$message->from('noreply@qoobroom.ru','QoobRoom');
 				$message->to('thedamaxstudio@gmail.com')->cc('sm@realitygroup.ru')->cc('greenwall@qoobroom.ru')->subject('QoobRoom - Заказ расчета стоимости');
 			});
 			return "success";
@@ -75,11 +75,16 @@ class HomeController extends BaseController {
 		if($validator->fails()):
 			return "false";
 		else:
-			DB::insert('insert into users (name, email) values (?, ?)',array($name,$email));
+			//DB::insert('insert into users (name, email) values (?, ?)',array($name,$email));
 			$data = array('link'=>$link,'name'=>$name);
 			Mail::send('emails.download3d',$data,function($message) use ($email) {
-				$message->from('noreply@QoobRoom.com','QoobRoom');
+				$message->from('noreply@qoobRoom.ru','QoobRoom');
 				$message->to($email)->subject('QoobRoom - 3D модели');
+			});
+			$data = array('link'=>$link,'name'=>$name, 'email'=>$email);
+			Mail::send('emails.downtoadmin',$data,function($message) {
+				$message->from('noreply@qoobRoom.ru','QoobRoom');
+				$message->to('thedamaxstudio@gmail.com')->cc('sm@realitygroup.ru')->cc('greenwall@qoobroom.ru')->subject('QoobRoom - 3D модели');
 			});
 			return $link;
 		endif;

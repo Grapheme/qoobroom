@@ -60,23 +60,7 @@
         			<div class="decoration-romb"></div>
         		</div>        		
         		<div class="rombic-slideshow">
-        			<div class="rombic-slideshow-cont">
-        				<div class="fotorama"
-	        				data-width="675"
-	        				data-height="675"
-        					data-fit="cover"
-        					data-swipe="true"
-        					data-loop="true"
-        					data-nav="false"
-        					data-autoplay="30000">
-        					
-        					<!-- This will force fotorama to load images asynchronously -->
-        					<a href="<?=URL::to('img/slides/01.jpg');?>" ></a>
-        					<a href="<?=URL::to('img/slides/02.jpg');?>" ></a>
-        					<a href="<?=URL::to('img/slides/03.jpg');?>" ></a>
-        					<a href="<?=URL::to('img/slides/04.jpg');?>" ></a>
-        				</div>
-        			</div>
+        			<img src="<?=URL::to('img/main_romb.png');?>" alt="">
         		</div>        		
         		<div class="dl-romb free-calc right__fade">
         			<div class="romb-cont">
@@ -565,7 +549,6 @@
         <script src="<?=URL::to('js/plugins.js');?>"></script>
         <script src="<?=URL::to('js/main.js');?>"></script>
 		<script src="<?=URL::to('js/vendor/input_style.js');?>"></script>
-		<script src="<?=URL::to('js/vendor/fotorama.js');?>"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

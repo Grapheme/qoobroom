@@ -205,26 +205,10 @@ body.modal-open { width: 100%; height: 100%; overflow: hidden; }
 }
 
 .interier-romb { position: absolute; display: inline-block; z-index: -1; }
-.rombic-slideshow { position: absolute; top: 117px; left: 174px; width: 476px; height: 476px; overflow: hidden;
-    -webkit-transform: rotate(45deg);
-       -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg); 
-         -o-transform: rotate(45deg);
-            transform: rotate(45deg);    
-}
-.rombic-slideshow-cont { position: absolute; top: -46px; left: -159px; width: 605px; height: 100%;
-	-webkit-transform: rotate(-45deg);
-       -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg); 
-         -o-transform: rotate(-45deg);
-            transform: rotate(-45deg);
--webkit-transform-style: preserve-3d;
--webkit-backface-visibility: hidden;
--webkit-font-smoothing: antialiased;
-}
+.rombic-slideshow { position: absolute; top: 18px; left: 74px; overflow: hidden; z-index: -2; }
 
 .dl-romb.model-dl { top: 130px; left: -18px; }
-.interier-romb.left-int { top: 320px; left: -120px;/*-79*/ }
+.interier-romb.left-int { top: 320px; left: -121px; }
 .interier-romb.left-int img { width: 314px; height: 314px; }
 .interier-romb.right-int { top: 198px; left: 720px; }
 .interier-romb.right-int img { width: 377px; height: 377px; }
@@ -419,7 +403,8 @@ footer { padding: 33px 0 /*70px*/; height: 118px/*200px*/; background-color: #33
 .big_logo { width: 108px; height: 130px; margin: 0 auto; background: url(../img/big_logo.png) no-repeat; }
 footer .social-links { display: inline-block; float: none; margin: 0 auto; }
 footer .social-links li { margin: 18px 6px 17px; }
-
+footer a[href="http://grapheme.ru"] { color: #222; text-decoration: none; }
+footer a[href="http://grapheme.ru"]:hover { color: #555; }
 
 .footer-links-list { display: none; width: 550px; margin: 1.75em auto 0.75em; padding: 0; list-style-type: none; }
 .footer-links-item { float: left; }

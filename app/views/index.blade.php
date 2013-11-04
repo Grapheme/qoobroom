@@ -66,9 +66,9 @@
 	        				data-height="675"
         					data-fit="cover"
         					data-swipe="true"
-        					data-transition="slide"
         					data-loop="true"
-        					data-nav="false">
+        					data-nav="false"
+        					data-autoplay="30000">
         					
         					<!-- This will force fotorama to load images asynchronously -->
         					<a href="<?=URL::to('img/slides/01.jpg');?>" ></a>
@@ -520,6 +520,9 @@
 	        		<li class="insta-item"><a href="#"> </a></li>
 	        	</ul>
         	</div>
+        	<div>
+				Разработано агентством &laquo;<a href="http://grapheme.ru" target="blank_">Графема</a>&raquo;
+			</div>
 		</footer>
 		<div class="overlay">
 			<div class="order-a-call">				

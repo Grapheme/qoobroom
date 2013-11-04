@@ -504,7 +504,7 @@
 	        		<li class="insta-item"><a href="#"> </a></li>
 	        	</ul>
         	</div>
-        	<div>
+        	<div class="developer">
 				Разработано агентством &laquo;<a href="http://grapheme.ru" target="blank_">Графема</a>&raquo;
 			</div>
 		</footer>

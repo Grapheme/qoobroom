@@ -404,8 +404,8 @@ footer { padding: 33px 0 /*70px*/; height: 118px/*200px*/; background-color: #33
 footer .social-links { display: inline-block; float: none; margin: 0 auto; }
 footer .social-links li { margin: 18px 6px 17px; }
 footer .developer { background: #333; color: #EEE; font-size: 12px; padding: 0 0 1em; }
-footer a[href="http://grapheme.ru"] { color: #eee; text-decoration: none; }
-footer a[href="http://grapheme.ru"]:hover { color: #aaa; }
+footer .developer a { color: #eee; text-decoration: none; }
+footer .developer a:hover { color: #aaa; }
 
 .footer-links-list { display: none; width: 550px; margin: 1.75em auto 0.75em; padding: 0; list-style-type: none; }
 .footer-links-item { float: left; }

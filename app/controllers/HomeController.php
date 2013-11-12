@@ -31,7 +31,7 @@ class HomeController extends BaseController {
 		endif;
 	}
 
-	public function calc(){
+	public function calculation(){
 		
 		$typep = Input::get('old_radio');
 		if($typep=='1') $type = "дизайнер";

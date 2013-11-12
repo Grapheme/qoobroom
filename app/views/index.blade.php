@@ -435,7 +435,7 @@
 		<section class="calculation-form-section clearfix">
 	    	<div class="mini-wrapper">
 	    		<header class="calculation-header">Да! Я хочу рассчитать зеленую стену из<br>cтабилизированных растений!</header>
-	    		<form class="calculation-form" action="calc" method="POST" enctype="multipart/form-data">
+	    		<form class="calculation-form" action="calculation" method="POST" enctype="multipart/form-data">
 	    			<div class="radio_buttons">
 	    				<div>
 			    			<input class="old_radio" checked type="radio" name="old_radio" id="iDesigner" onclick="" value="1">
@@ -452,12 +452,12 @@
 	    			</div>
 	    			<div class="clear"></div>
 	    			<div class="input-and-error name-calc-div">
-						<input class="text-input name-calc-input" type="text" placeholder="Меня зовут">
-						<div class="error-text">Заполните поле "имя".</div>
+						<input name="name" class="text-input name-calc-input" type="text" placeholder="Меня зовут">
+						<div class="error-text">Вы не заполнили обязательное поле</div>
 					</div>
 	    			<div class="input-and-error email-calc-div">
-						<input class="text-input email-calc-input" type="text" placeholder="Моя электронная почта">
-						<div class="error-text">Введите адрес электронной почты.</div>
+						<input name="email" class="text-input email-calc-input" type="text" placeholder="Моя электронная почта">
+						<div class="error-text">Моя электронная почта</div>
 					</div>
 					<div class="form-invite form-invite-buyers">
 	    				Для Вас у нас есть выгодное предложение!	    				
@@ -467,8 +467,8 @@
 	    				Чтобы подтвердить, что вы - дизайнер, вышлите нам копию диплома или копию<br>
 	    				трудовой книжки.	    				
 	    			</div>
-	    			<input type="file" class="designer-docs">
-	    			<button type="button" class="site-button pretty-button black-button bottom-button calc-send" onclick="yaCounter22657276.reachGoal('freeCalcBtn'); return true;">Рассчитать бесплатно</button>
+	    			<input name="file" type="file" class="designer-docs">
+	    			<button type="button" class="site-button pretty-button black-button bottom-button calc-send">Рассчитать бесплатно</button>
 	    		</form>
 	    	</div>
 	    </section>

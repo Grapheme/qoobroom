@@ -13,5 +13,5 @@
 
 Route::get('/', "HomeController@index");
 Route::post('recall', "HomeController@recall");
-Route::post('calc', "HomeController@calc");
+Route::post('calculation', "HomeController@calculation");
 Route::post('download3d', "HomeController@download3d");

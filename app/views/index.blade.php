@@ -27,9 +27,9 @@
         		<h1 class="logo">QoobRoom</h1>
         		<div class="social-links">
 	        		<ul class="clearfix">
-	        			<li class="faceb-item"><a href="#"> </a></li>
-	        			<!--<li class="vk-item"><a href="#"> </a></li>
-	        			<li class="insta-item"><a href="#"> </a></li>-->
+	        			<li class="faceb-item"><a href="https://www.facebook.com/qoobroom" target="_blank"> </a></li>
+	        			<li class="vk-item"><a href="https://vk.com/qoobroom" target="_blank"> </a></li>
+	        			<!--<li class="insta-item"><a href="#"> </a></li>-->
 	        		</ul>
         		</div>
         	</div>        	

@@ -308,7 +308,7 @@ $('.calculation-form .black-button').click( function(){
 	});
 
 		$('.calc-send').html('Идет отправка...');
-		//$('.calc-send').attr('disabled', 'disabled');
+		$('.calc-send').attr('disabled', 'disabled');
 	}
 });
 $('.recall-send').click( function(){

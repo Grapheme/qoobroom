@@ -300,7 +300,7 @@ $('.calculation-form .black-button').click( function(){
 	if(error == 0) {
 	$('form.calculation-form').ajaxSubmit({
 		 beforeSubmit:function(formData, jqForm, options){
-			alert('ddddd');
+			
 		}
 		, success:function(response,statusText,xhr,jqForm){
 			$('.calculation-form').html('<div class="calculation-success">Ваша форма заявки на расчет зеленой стены успешно отправлена.</div>');

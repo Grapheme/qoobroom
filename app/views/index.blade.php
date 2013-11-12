@@ -28,8 +28,8 @@
         		<div class="social-links">
 	        		<ul class="clearfix">
 	        			<li class="faceb-item"><a href="#"> </a></li>
-	        			<li class="vk-item"><a href="#"> </a></li>
-	        			<li class="insta-item"><a href="#"> </a></li>
+	        			<!--<li class="vk-item"><a href="#"> </a></li>
+	        			<li class="insta-item"><a href="#"> </a></li>-->
 	        		</ul>
         		</div>
         	</div>        	
@@ -45,7 +45,7 @@
         			</div>
         			<h2 class="mission-header">Вертикальное озеленение<br>и зеленые стены<span>из стабилизированных растений</span></h2>
         		</header>
-        		<div class="delivery-info">Доставка по России.</div>
+        		<div class="delivery-info">Доставка по России</div>
         	</section>        	       	
         </article>
         <section class="rombic-figures">
@@ -435,7 +435,7 @@
 		<section class="calculation-form-section clearfix">
 	    	<div class="mini-wrapper">
 	    		<header class="calculation-header">Да! Я хочу рассчитать зеленую стену из<br>cтабилизированных растений!</header>
-	    		<form class="calculation-form">
+	    		<form class="calculation-form" action="calc" method="POST" enctype="multipart/form-data">
 	    			<div class="radio_buttons">
 	    				<div>
 			    			<input class="old_radio" checked type="radio" name="old_radio" id="iDesigner" onclick="" value="1">
@@ -447,7 +447,7 @@
 	    				<div>
 			    			<input class="old_radio" type="radio" name="old_radio" id="iBuyer" onclick="" value="0">
 			    			<label class="new_radio" for="iBuyer"> </label>
-			    			<label>Я — простой покупатель</label>
+			    			<label>Я — покупатель</label>
 		    			</div>
 	    			</div>
 	    			<div class="clear"></div>
@@ -460,7 +460,7 @@
 						<div class="error-text">Введите адрес электронной почты.</div>
 					</div>
 					<div class="form-invite form-invite-buyers">
-	    				Для вас у нас есть выгодное предложение!	    				
+	    				Для Вас у нас есть выгодное предложение!	    				
 	    			</div>
 	    			<div class="form-invite form-invite-designers">
 	    				Для дизайнеров мы приготовили особые условия сотрудничества.<br>
@@ -496,13 +496,13 @@
 					<li class="footer-links-item"><a href="#">Конкурсы для дизайнеров</a></li>
 				</ul>
 			</div>
-			<div class="social-links">
+			<!--<div class="social-links">
 	        	<ul class="clearfix">
 	        		<li class="faceb-item"><a href="#"> </a></li>
 	        		<li class="vk-item"><a href="#"> </a></li>
 	        		<li class="insta-item"><a href="#"> </a></li>
 	        	</ul>
-        	</div>
+        	</div>-->
         	<div class="developer">
 				Разработано агентством &laquo;<a href="http://grapheme.ru" target="blank_">Графема</a>&raquo;
 			</div>
@@ -547,6 +547,7 @@
         <script>window.jQuery || document.write('<script src="<?=URL::to('js/vendor/jquery-1.10.2.min.js');?>"><\/script>')</script>
         <script src="<?=URL::to('js/plugins.js');?>"></script>
         <script src="<?=URL::to('js/main.js');?>"></script>
+        <script src="<?=URL::to('js/vendor/jquery.form.js');?>"></script>
 		<script src="<?=URL::to('js/vendor/input_style.js');?>"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

@@ -15,7 +15,6 @@
         <link rel="stylesheet" href="<?=URL::to('css/fotorama.css');?>">
         <link rel="stylesheet" href="<?=URL::to('css/main.css');?>">
         <link rel="stylesheet" href="<?=URL::to('css/fonts.css');?>">
-        <script src="<?=URL::to('js/vendor/modernizr-2.6.2.min.js');?>"></script>
     </head>
     <body>
         <!--[if lt IE 7]>

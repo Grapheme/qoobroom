@@ -5,9 +5,10 @@
 	RewriteCond %{REQUEST_URI} !public/
 	RewriteRule (.*) /public/$1 [L]
 </IfModule>
-<IfModule mod_expires.c>
-ExpiresActive On
-<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
- ExpiresDefault "access plus 1 year"
-</FilesMatch>
-</IfModule>
+
+<Ifmodule mod_expires.c>
+<Filesmatch ".(jpg|jpeg|gif|png|ico|css|js)$">
+ExpiresActive on
+ExpiresDefault "access plus 1 month"
+</Filesmatch>
+</Ifmodule>

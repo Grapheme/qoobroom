@@ -196,7 +196,7 @@ body.modal-open { width: 100%; height: 100%; overflow: hidden; }
 }
 .model-dl .romb-cont { top: 24px; right: 9px; }
 .free-calc .romb-cont { top: 59px; right: 21px; }
-.proj-present .romb-cont { top: 30px; right: 28px; }
+.proj-present .romb-cont { top: 30px; right: 42px; }
 
 .free-calc .romb-cont a { border-bottom: 1px solid #fff; color: #fff; font: 1.25em / 1.3em 'intro-book', sans-serif; text-transform: uppercase; text-decoration: none; 
 	-webkit-transform-style: preserve-3d;

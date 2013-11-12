@@ -76,10 +76,10 @@
 					<img src="<?=URL::to('img/rombic/int-right.png');?>" alt="">
 				</div>
         		<div class="dl-romb proj-present right__fade">
-        			<a href="<?=URL::to('download/QRGreenWall.pdf');?>" target="_blank" class="romb-cont">
-        					<img src="<?=URL::to('img/rombic/green_book.png');?>" alt="">
-        					<span>Презентация проекта</span>
-        					<span class="green-span">Скачать</span>        				
+        			<a href="<?=URL::to('download/QRGreenWall.pdf');?>" target="_blank" class="romb-cont" onclick="yaCounter22657276.reachGoal('dlBookletTop'); return true;">
+        					<img src="<?=URL::to('img/rombic/green_book.png');?>" alt="">        					
+        					<span class="green-span">Скачать буклет</span>  
+        					<span>PDF, 1.3mb</span>      				
         			</a>
         			<div class="decoration-romb"></div>
         		</div>
@@ -171,7 +171,7 @@
 	    				Показывайте вашим клиентам, держите под рукой 
 	    			</span>
 	    			<span class="site-button-container right_func">
-	    				<a href="<?=URL::to('download/QRGreenWall.pdf');?>" target="_blank" class="site-button pretty-button black-button">Скачать презентацию</a>
+	    				<a href="<?=URL::to('download/QRGreenWall.pdf');?>" target="_blank" class="site-button pretty-button black-button" onclick="yaCounter22657276.reachGoal('dlBooklet2Btn'); return true;">Скачать буклет</a>
 	    			</span>
 	    		</div>
 	    	</div>
@@ -454,11 +454,11 @@
 	    			<div class="clear"></div>
 	    			<div class="input-and-error name-calc-div">
 						<input class="text-input name-calc-input" type="text" placeholder="Меня зовут">
-						<div class="error-text">Вы не заполнили обязательное поле.</div>
+						<div class="error-text">Заполните поле "имя".</div>
 					</div>
 	    			<div class="input-and-error email-calc-div">
 						<input class="text-input email-calc-input" type="text" placeholder="Моя электронная почта">
-						<div class="error-text">Моя электронная почта</div>
+						<div class="error-text">Введите адрес электронной почты.</div>
 					</div>
 					<div class="form-invite form-invite-buyers">
 	    				Для вас у нас есть выгодное предложение!	    				
@@ -469,7 +469,7 @@
 	    				трудовой книжки.	    				
 	    			</div>
 	    			<input type="file" class="designer-docs">
-	    			<button type="button" class="site-button pretty-button black-button bottom-button calc-send">Рассчитать бесплатно</button>
+	    			<button type="button" class="site-button pretty-button black-button bottom-button calc-send" onclick="yaCounter22657276.reachGoal('freeCalcBtn'); return true;">Рассчитать бесплатно</button>
 	    		</form>
 	    	</div>
 	    </section>
@@ -515,17 +515,17 @@
 					<div class="calculation-header">Заказать звонок</div>					
 					<div class="input-and-error name-div">
 						<input class="text-input name-input" type="text" placeholder="Меня зовут">
-						<div class="error-text">Вы не заполнили обязательное поле.</div>
+						<div class="error-text">Заполните поле "имя".</div>
 					</div>
 					<div class="input-and-error phone-div">
 						<input class="text-input phone-input" type="text" placeholder="Мой телефон">
-						<div class="error-text">Вы не заполнили обязательное поле.</div>
+						<div class="error-text">Введите свой контактный телефон.</div>
 					</div>
 					<div class="input-and-error time-div">
 						<input class="text-input time-input" type="text" placeholder="Желаемое время звонка">
 						<div class="error-text">Вы не заполнили обязательное поле.</div>
 					</div>
-					<button class="site-button pretty-button black-button bottom-button recall-send">Отправить</button>
+					<button class="site-button pretty-button black-button bottom-button recall-send" onclick="yaCounter22657276.reachGoal('orderACallBtn'); return true;">Отправить</button>
 				</form>				
 			</div>
 			<div class="dl-3D-download">
@@ -534,13 +534,13 @@
 					<div class="calculation-header">Скачать 3D-модели</div>					
 					<div class="input-and-error name-3d-div">
 						<input class="text-input name-3d-input" type="text" placeholder="Меня зовут">
-						<div class="error-text">Вы не заполнили обязательное поле.</div>
+						<div class="error-text">Заполните поле "имя".</div>
 					</div>
 					<div class="input-and-error email-3d-div">
 						<input class="text-input email-3d-input" type="text" placeholder="Моя электронная почта">
-						<div class="error-text">Вы не заполнили обязательное поле.</div>
+						<div class="error-text">Введите адрес электронной почты.</div>
 					</div>					
-					<button type="button" class="site-button pretty-button black-button bottom-button download-send">Скачать</button>
+					<button type="button" class="site-button pretty-button black-button bottom-button download-send" onclick="yaCounter22657276.reachGoal('get3DModelBtn'); return true;">Скачать</button>
 				</form>			
 			</div>
 		</div>

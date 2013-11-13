@@ -298,14 +298,14 @@ $('.calculation-form .black-button').click( function(){
 	}
 	
 	if(error == 0) {
-	$('form.calculation-form').ajaxSubmit({
-		 beforeSubmit:function(formData, jqForm, options){
-			
-		}
-		, success:function(response,statusText,xhr,jqForm){
-			$('.calculation-form').html('<div class="calculation-success">Ваша форма заявки на расчет зеленой стены успешно отправлена.</div>');
-		}
-	});
+		$('form.calculation-form').ajaxSubmit({
+			target: null,type:'post',dataType:null,
+			beforeSubmit:function(formData, jqForm, options){},
+			uploadProgress: function(event,position,total,percentComplete){},
+			success:function(response,statusText,xhr,jqForm){
+				$('.calculation-form').html('<div class="calculation-success">Ваша форма заявки на расчет зеленой стены успешно отправлена.</div>');
+			}
+		});
 
 		$('.calc-send').html('Идет отправка...');
 		$('.calc-send').attr('disabled', 'disabled');

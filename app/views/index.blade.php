@@ -41,7 +41,7 @@
         				Возникли вопросы? Звони!
         				<span class="phone-number">8-800-550-00-76</span>
         				<span class="free-call">Звонок бесплатный с любого телефона.</span>
-        				<button class="site-button pretty-button green-button">Заказать звонок</button>
+        				<button class="site-button pretty-button green-button" onclick="yaCounter22657276.reachGoal('orderACallLink1'); return true;">Заказать звонок</button>
         			</div>
         			<h2 class="mission-header">Вертикальное озеленение<br>и зеленые стены<span>из стабилизированных растений</span></h2>
         		</header>
@@ -51,7 +51,7 @@
         <section class="rombic-figures">
         	<div class="mini-wrapper">
         		<div class="dl-romb model-dl left__fade">
-        			<a href="#" class="romb-cont">
+        			<a href="#" class="romb-cont" onclick="yaCounter22657276.reachGoal('order3DModels1'); return true;">
         				<img src="<?=URL::to('img/rombic/grass_block.png');?>" alt="">
         				<span>3-D модели растений</span>
         				<span class="green-span" href="#">Скачать</span>
@@ -232,7 +232,7 @@
 	    				понятный заказчику, наглядный образ его будущей зеленой стены. 
 	    			</span>
 	    			<span class="site-button-container left_func">
-	    				<button class="site-button pretty-button black-button">Скачать 3D модели</button>
+	    				<button class="site-button pretty-button black-button" onclick="yaCounter22657276.reachGoal('order3DModels2'); return true;">Скачать 3D модели</button>
 	    			</span>
 	    		</div>
 	    	</div>
@@ -452,12 +452,12 @@
 	    			</div>
 	    			<div class="clear"></div>
 	    			<div class="input-and-error name-calc-div">
-						<input name="name" class="text-input name-calc-input" type="text" placeholder="Меня зовут">
-						<div class="error-text">Вы не заполнили обязательное поле</div>
+						<input class="text-input name-calc-input" name="name" type="text" placeholder="Меня зовут">
+						<div class="error-text">Заполните поле "имя".</div>
 					</div>
 	    			<div class="input-and-error email-calc-div">
-						<input name="email" class="text-input email-calc-input" type="text" placeholder="Моя электронная почта">
-						<div class="error-text">Моя электронная почта</div>
+						<input class="text-input email-calc-input" name="email" type="text" placeholder="Моя электронная почта">
+						<div class="error-text">Введите адрес электронной почты.</div>
 					</div>
 					<div class="form-invite form-invite-buyers">
 	    				Для Вас у нас есть выгодное предложение!	    				
@@ -467,8 +467,8 @@
 	    				Чтобы подтвердить, что вы - дизайнер, вышлите нам копию диплома или копию<br>
 	    				трудовой книжки.	    				
 	    			</div>
-	    			<input name="file" type="file" class="designer-docs">
-	    			<button type="button" class="site-button pretty-button black-button bottom-button calc-send">Рассчитать бесплатно</button>
+	    			<input type="file" name="file" class="designer-docs">
+	    			<button type="button" class="site-button pretty-button black-button bottom-button calc-send" onclick="yaCounter22657276.reachGoal('freeCalcBtn'); return true;">Рассчитать бесплатно</button>
 	    		</form>
 	    	</div>
 	    </section>
@@ -478,7 +478,7 @@
 			    <div class="phone-number right_func">8-800-550-00-76</div>
 			    <span class="a-little-quote left_func">Звонок бесплатный с любого телефона </span>
 			    <div class="site-button-container right_func">
-			    	<button class="site-button pretty-button green-button">Заказать звонок</button>
+			    	<button class="site-button pretty-button green-button" onclick="yaCounter22657276.reachGoal('orderACallLink2'); return true;">Заказать звонок</button>
 			    </div>
 			    <div class="email">
 			    	<span class="boldlighted-span right_func">Или написать</span>

@@ -425,7 +425,7 @@ footer .developer a:hover { color: #aaa; }
 .dl-booklet .dl-block { position: relative; top: 2px; margin: 0 0 0 412px; }
 .dl-3D .dl-block { position: relative; top: 10px;margin: 0 0 0 290px; }
 .dl-block .a-little-quote { display: block; margin: 0 0 1em; }
-
+.excuse { padding: 100px 50px 50px; font-size: 22px; line-height: 2em; text-align: center; }
 /* Section why-choose-us */
 
 .why-choose-us { background: #fff; }

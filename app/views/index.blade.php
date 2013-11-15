@@ -530,7 +530,7 @@
 			<div class="dl-3D-download">
 				<form class="call-form">
 					<div class="form-close">✕</div>
-					<div class="calculation-header">Скачать 3D-модели</div>					
+				<!--<div class="calculation-header">Скачать 3D-модели</div>					
 					<div class="input-and-error name-3d-div">
 						<input class="text-input name-3d-input" type="text" placeholder="Меня зовут">
 						<div class="error-text">Заполните поле "имя".</div>
@@ -539,8 +539,11 @@
 						<input class="text-input email-3d-input" type="text" placeholder="Моя электронная почта">
 						<div class="error-text">Введите адрес электронной почты.</div>
 					</div>					
-					<button type="button" class="site-button pretty-button black-button bottom-button download-send" onclick="yaCounter22657276.reachGoal('get3DModelBtn'); return true;">Скачать</button>
-				</form>			
+					<button type="button" class="site-button pretty-button black-button bottom-button download-send" onclick="yaCounter22657276.reachGoal('get3DModelBtn'); return true;">Скачать</button>-->
+					<div class="excuse">
+						Мы дорабатываем 3D-модели и в ближайшее время возобновим возможность загрузки. Приносим свои извинения!
+					</div>
+				</form>							
 			</div>
 		</div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

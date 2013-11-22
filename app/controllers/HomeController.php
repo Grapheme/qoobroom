@@ -25,7 +25,7 @@ class HomeController extends BaseController {
 			$data = array('name'=>$name,'phone'=>$phone,'time'=>$time);
 			Mail::send('emails.recall',$data,function($message){
 				$message->from('noreply@qoobroom.ru','QoobRoom');
-				$message->to('thedamaxstudio@gmail.com')->cc('sm@realitygroup.ru')->cc('greenwall@qoobroom.ru')->subject('QoobRoom - Заказ звонка');
+				$message->to('greenwall@qoobroom.ru')->subject('QoobRoom - Заказ звонка');
 			});
 			return 'success';
 		endif;
@@ -56,7 +56,7 @@ class HomeController extends BaseController {
 			$data = array('type'=>$type,'name'=>$name,'email'=>$email,'file'=>$filePath);
 			Mail::send('emails.calc', $data, function($message){
 				$message->from('noreply@qoobroom.ru','QoobRoom');
-				$message->to('thedamaxstudio@gmail.com')->cc('sm@realitygroup.ru')->cc('greenwall@qoobroom.ru')->subject('QoobRoom - Заказ расчета стоимости');
+				$message->to('greenwall@qoobroom.ru')->subject('QoobRoom - Заказ расчета стоимости');
 			});
 			return "success";
 		endif;
@@ -84,7 +84,7 @@ class HomeController extends BaseController {
 			$data = array('link'=>$link,'name'=>$name, 'email'=>$email);
 			Mail::send('emails.downtoadmin',$data,function($message) {
 				$message->from('noreply@qoobRoom.ru','QoobRoom');
-				$message->to('thedamaxstudio@gmail.com')->cc('sm@realitygroup.ru')->cc('greenwall@qoobroom.ru')->subject('QoobRoom - 3D модели');
+				$message->to('greenwall@qoobroom.ru')->subject('QoobRoom - 3D модели');
 			});
 			return $link;
 		endif;
